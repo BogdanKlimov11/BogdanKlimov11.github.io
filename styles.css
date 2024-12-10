@@ -1,0 +1,102 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Стили для страницы "О себе" */
+.profile-photo {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Стили для проектов */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.project {
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+/* Стили для формы контактов */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
